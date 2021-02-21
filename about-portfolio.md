@@ -2,4 +2,7 @@
  # Thanks for checking this Repository
  - First of all I hope you have some basic understanding of HTML , so that you can work with the HTML files
  - Note:- You can use this portfolio as a template, you can create issues and share the projects you have made using this template or even can let me know if you found any bug.
- - check the website here:- <a href="https://pulkit0076.github.io">Portfolio</a>
+ - check the website here:- <a href="https://pulkit0076.github.io">Portfolio</a><br>
+<a href="https://www.youtube.com/channel/UCWvqpm9sTcjgXLkp5Ylro-A?sub_confirmation=1">
+  <img src="https://github.com/Pulkit0076/Pulkit0076.github.io/blob/main/hi-from-pulkit-removebg-preview.png" align="center">
+</a>
