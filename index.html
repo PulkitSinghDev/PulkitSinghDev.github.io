@@ -4,6 +4,58 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  
+  <style>
+      .typ::before { 
+            content: "Web Developer"; 
+            animation: animate infinite 20s;  
+        } 
+  
+        @keyframes animate {
+            10% { 
+                content: "Mentor"; 
+            }
+            20% { 
+                content: "Open Source Contributor"; 
+            }
+            30% { 
+                content: "AI Enthusiast"; 
+            } 
+            40% { 
+                content: "Front End Enthusiast"; 
+            }
+            50% { 
+                content: "Cloud Computing Enthusiast"; 
+            }
+            60% { 
+                content: "Artist"; 
+            }
+            70% { 
+                content: "Photographer"; 
+            }
+            80% { 
+                content: "Technical Writer"; 
+            }
+        }
+        .typ {
+  animation: animated-text 4s steps(29,end) 1s 1 normal both,
+             animated-cursor 600ms steps(29,end) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 472px;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-right-color: rgba(0,255,0,.75);}
+  to{border-right-color: transparent;}
+}
+    </style>
 
   <title>Hi there👋, I am Pulkit</title>
   <meta content="Professional website of Pulkit Singh. About: A Mentor, Open Source Contributor, AI Enthusiast, Front End Enthusiast, Cloud Computing Enthusiast, Artist, Photographer, Technical Writer" name="description">
@@ -44,7 +96,7 @@
       <h1><a href="index.html">Pulkit Singh</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
-      <h2>He is a passionate <b><span class="typing"></span></b> from India.</h2>
+      <h2>He is a passionate <b><span class="typ"></span></b> from India.</h2>
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -793,14 +845,6 @@ To run a cell press....
   <script src="assets/vendor/purecounter/purecounter.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script type="text/javascript">
-    var typed = new Typed('.typing',{
-      strings: ["An OpenSource Enthusiast","A Software Developer", "An Automation Scripter", "An AI Enthusiast", "A Content Creator", "A Programmer"],
-      loop: true,
-      typeSpeed: 35,
-      backSpeed: 35
-    });
-  </script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
