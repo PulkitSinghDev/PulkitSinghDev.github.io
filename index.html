@@ -61,6 +61,34 @@
   from{border-right-color: rgba(0,255,0,.75);}
   to{border-right-color: transparent;}
 }
+    .audio-play {
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 10;
+  padding: 15px;
+  text-align: left;
+  font-size: 13px;
+  color: #fff;
+  z-index: 999999;
+}
+
+@media (max-width: 992px) {
+  .audio-play {
+    text-align: left;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0);
+  }
+}
+
+.audio-play i {
+  color: #18d26e;
+  transition: 0.3s;
+}
+
+.audio-play i:hover {
+  color: #fff;
+}
     </style>
 
   <title>Hi there👋, I am Pulkit</title>
@@ -94,7 +122,28 @@
 </head>
 
 <body>
+<div class="audio-play">
+       <audio id="player" src="darkside.mp3" autoplay></audio>
+          <div>
+              <button onclick="togglePlay('player').play()" style="background: transparent; border: 0px"><i class="bi-volume-down" style="padding: 20px; margin: 15px; font-size: 250%;" ></i></button>
+              <script type="text/javascript">
+              	var myAudio = document.getElementById("player");
+var isPlaying = false;
 
+function togglePlay() {
+  isPlaying ? myAudio.pause() : myAudio.play();
+};
+
+myAudio.onplaying = function() {
+  isPlaying = true;
+};
+myAudio.onpause = function() {
+  isPlaying = false;
+};
+
+              </script>
+          </div>
+  </div>
   <!-- ======= Header ======= -->
   <header id="header">
     <div class="container">
