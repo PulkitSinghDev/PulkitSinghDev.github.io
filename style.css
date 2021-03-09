@@ -192,7 +192,7 @@ section .title::after{
     color: crimson;
     font-weight: 500;
 }
-.home .home-content a{
+.home .home-content .hire{
     display: inline-block;
     background: crimson;
     color: #fff;
@@ -204,7 +204,7 @@ section .title::after{
     border: 2px solid crimson;
     transition: all 0.3s ease;
 }
-.home .home-content a:hover{
+.home .home-content .hire:hover{
     color: crimson;
     background: none;
 }
